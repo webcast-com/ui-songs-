@@ -1,0 +1,157 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Music Categories - UI Music
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+      background: 
+        radial-gradient(circle at top left, #ff0000, transparent 40%),
+        radial-gradient(circle at top right, #ff7f00, transparent 40%),
+        radial-gradient(circle at bottom left, #ffff00, transparent 40%),
+        radial-gradient(circle at bottom right, #00ff00, transparent 40%),
+        radial-gradient(circle at center, #0000ff, transparent 60%);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-color: #1e293b; /* fallback dark blue-gray */
+    }
+  </style>
+ </head>
+ <body class="bg-transparent text-gray-100 min-h-screen flex flex-col">
+  <header class="bg-gray-900 bg-opacity-90 text-white shadow-md backdrop-blur-sm">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+    <div class="flex items-center space-x-4">
+     <img alt="UI Dev Logo" class="h-10 w-10 rounded" height="40" src="https://storage.googleapis.com/a1aa/image/230b61b7-abec-45e2-5f46-b9fa03f68217.jpg" width="40"/>
+     <h1 class="text-xl font-bold">
+      UI Music
+     </h1>
+    </div>
+    <nav class="hidden md:flex space-x-6">
+     <a class="text-gray-300 hover:text-white font-medium" href="index.html">
+      Home
+     </a>
+     <a class="text-gray-300 hover:text-white font-medium" href="new-songs.html">
+      New Songs
+     </a>
+     <a class="text-gray-300 hover:text-white font-medium" href="#artists-list">
+      Artists
+     </a>
+     <a class="text-gray-300 hover:text-white font-medium" href="videos.html">
+      Videos
+     </a>
+     <a class="text-gray-300 hover:text-white font-medium" href="music-blog.html">
+      Blog
+     </a>
+     <a class="text-gray-300 hover:text-white font-medium" href="#team-section">
+      Team
+     </a>
+     <a class="text-gray-300 hover:text-white font-medium" href="categories.html">
+      Categories
+     </a>
+    </nav>
+    <div class="md:hidden">
+     <button aria-label="Open menu" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white">
+      <i class="fas fa-bars fa-lg">
+      </i>
+     </button>
+    </div>
+   </div>
+  </header>
+  <main class="max-w-6xl mx-auto px-4 py-10 flex-grow">
+   <h2 class="text-3xl font-bold mb-8 text-white drop-shadow-lg text-center">
+    Music Categories
+   </h2>
+   <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+    <li class="bg-white bg-opacity-20 backdrop-blur-md rounded-lg shadow-lg border border-white border-opacity-20 p-6 flex flex-col items-center text-center hover:bg-white hover:bg-opacity-30 transition cursor-pointer">
+     <img alt="Pop music icon" class="w-20 h-20 mb-4" height="80" src="https://storage.googleapis.com/a1aa/image/a7f169c3-ac17-4015-bab5-168aa8b02c20.jpg" width="80"/>
+     <h3 class="text-xl font-semibold text-white drop-shadow-md">
+      Pop
+     </h3>
+    </li>
+    <li class="bg-white bg-opacity-20 backdrop-blur-md rounded-lg shadow-lg border border-white border-opacity-20 p-6 flex flex-col items-center text-center hover:bg-white hover:bg-opacity-30 transition cursor-pointer">
+     <img alt="Rock music icon" class="w-20 h-20 mb-4" height="80" src="https://storage.googleapis.com/a1aa/image/113ae9e8-6bb3-42af-30c7-3b5942868057.jpg" width="80"/>
+     <h3 class="text-xl font-semibold text-white drop-shadow-md">
+      Rock
+     </h3>
+    </li>
+    <li class="bg-white bg-opacity-20 backdrop-blur-md rounded-lg shadow-lg border border-white border-opacity-20 p-6 flex flex-col items-center text-center hover:bg-white hover:bg-opacity-30 transition cursor-pointer">
+     <img alt="Hip Hop music icon" class="w-20 h-20 mb-4" height="80" src="https://storage.googleapis.com/a1aa/image/c7704af4-8a96-492a-f4f7-e7deaaec5429.jpg" width="80"/>
+     <h3 class="text-xl font-semibold text-white drop-shadow-md">
+      Hip Hop
+     </h3>
+    </li>
+    <li class="bg-white bg-opacity-20 backdrop-blur-md rounded-lg shadow-lg border border-white border-opacity-20 p-6 flex flex-col items-center text-center hover:bg-white hover:bg-opacity-30 transition cursor-pointer">
+     <img alt="Jazz music icon" class="w-20 h-20 mb-4" height="80" src="https://storage.googleapis.com/a1aa/image/5ad8277c-aef8-404b-e338-ce2735bd9c8a.jpg" width="80"/>
+     <h3 class="text-xl font-semibold text-white drop-shadow-md">
+      Jazz
+     </h3>
+    </li>
+    <li class="bg-white bg-opacity-20 backdrop-blur-md rounded-lg shadow-lg border border-white border-opacity-20 p-6 flex flex-col items-center text-center hover:bg-white hover:bg-opacity-30 transition cursor-pointer">
+     <img alt="Classical music icon" class="w-20 h-20 mb-4" height="80" src="https://storage.googleapis.com/a1aa/image/8c21b543-ee42-42fe-2476-1836eb40d38d.jpg" width="80"/>
+     <h3 class="text-xl font-semibold text-white drop-shadow-md">
+      Classical
+     </h3>
+    </li>
+    <li class="bg-white bg-opacity-20 backdrop-blur-md rounded-lg shadow-lg border border-white border-opacity-20 p-6 flex flex-col items-center text-center hover:bg-white hover:bg-opacity-30 transition cursor-pointer">
+     <img alt="Electronic music icon" class="w-20 h-20 mb-4" height="80" src="https://storage.googleapis.com/a1aa/image/675b2ce9-cd5d-4df4-2c78-c53b36a68f52.jpg" width="80"/>
+     <h3 class="text-xl font-semibold text-white drop-shadow-md">
+      Electronic
+     </h3>
+    </li>
+    <li class="bg-white bg-opacity-20 backdrop-blur-md rounded-lg shadow-lg border border-white border-opacity-20 p-6 flex flex-col items-center text-center hover:bg-white hover:bg-opacity-30 transition cursor-pointer">
+     <img alt="Country music icon" class="w-20 h-20 mb-4" height="80" src="https://storage.googleapis.com/a1aa/image/4d6077ac-e0e3-47ba-6f32-5df64c20aa12.jpg" width="80"/>
+     <h3 class="text-xl font-semibold text-white drop-shadow-md">
+      Country
+     </h3>
+    </li>
+    <li class="bg-white bg-opacity-20 backdrop-blur-md rounded-lg shadow-lg border border-white border-opacity-20 p-6 flex flex-col items-center text-center hover:bg-white hover:bg-opacity-30 transition cursor-pointer">
+     <img alt="Reggae music icon" class="w-20 h-20 mb-4" height="80" src="https://storage.googleapis.com/a1aa/image/e7e8c494-7db2-4b9b-a5b6-d022764f662d.jpg" width="80"/>
+     <h3 class="text-xl font-semibold text-white drop-shadow-md">
+      Reggae
+     </h3>
+    </li>
+   </ul>
+  </main>
+  <footer class="bg-gray-900 bg-opacity-90 text-white text-center py-6 backdrop-blur-sm mt-auto">
+   <p class="text-sm">
+    © 2025 UI  Music. All rights reserved.
+   </p>
+  </footer>
+  <!-- Ads Popup -->
+  <div class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden" id="ads-popup">
+   <div class="bg-white rounded-lg max-w-md w-full p-6 relative shadow-xl">
+    <button aria-label="Close ad popup" class="absolute top-3 right-3 text-gray-600 hover:text-gray-900 focus:outline-none" id="ads-close-btn">
+     <i class="fas fa-times fa-lg">
+     </i>
+    </button>
+    <h3 class="text-xl font-bold mb-4 text-gray-900">
+     Special Offer!
+    </h3>
+    <p class="mb-6 text-gray-700">
+     Get 50% off on premium membership. Enjoy ad-free music and exclusive content.
+    </p>
+    <a class="inline-block bg-purple-700 text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-purple-800 transition w-full text-center" href="#">
+     Upgrade Now
+    </a>
+   </div>
+  </div>
+  <script>
+   // Show the ads popup after 3 seconds
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('ads-popup').classList.remove('hidden');
+      }, 3000);
+    });
+
+    // Close button handler
+    document.getElementById('ads-close-btn').addEventListener('click', () => {
+      document.getElementById('ads-popup').classList.add('hidden');
+    });
+  </script>
+ </body>
+</html>
