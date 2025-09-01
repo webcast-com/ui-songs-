@@ -1,0 +1,142 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - UI Dev Music</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <style>
+    body {
+      background: 
+        radial-gradient(circle at top left, #ff0000, transparent 40%),
+        radial-gradient(circle at top right, #ff7f00, transparent 40%),
+        radial-gradient(circle at bottom left, #ffff00, transparent 40%),
+        radial-gradient(circle at bottom right, #00ff00, transparent 40%),
+        radial-gradient(circle at center, #0000ff, transparent 60%);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-color: #1e293b; /* fallback dark blue-gray */
+    }
+  </style>
+</head>
+<body class="bg-transparent text-gray-100 min-h-screen flex flex-col">
+  <header class="bg-gray-900 bg-opacity-90 text-white shadow-md backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <div class="flex items-center space-x-4">
+        <img
+          alt="UI Dev Logo"
+          class="h-10 w-10 rounded"
+          height="40"
+          src="https://storage.googleapis.com/a1aa/image/230b61b7-abec-45e2-5f46-b9fa03f68217.jpg"
+          width="40"
+        />
+        <h1 class="text-xl font-bold">UI Dev Music</h1>
+      </div>
+      <nav class="hidden md:flex space-x-6">
+        <a class="text-gray-300 hover:text-white font-medium" href="index.html">Home</a>
+        <a class="text-gray-300 hover:text-white font-medium" href="new-songs.html">New Songs</a>
+        <a class="text-gray-300 hover:text-white font-medium" href="#artists-list">Artists</a>
+        <a class="text-gray-300 hover:text-white font-medium" href="videos.html">Videos</a>
+        <a class="text-gray-300 hover:text-white font-medium" href="music-blog.html">Blog</a>
+        <a class="text-gray-300 hover:text-white font-medium" href="#team-section">Team</a>
+        <a class="text-gray-300 hover:text-white font-medium" href="categories.html">Categories</a>
+        <a class="text-gray-300 hover:text-white font-medium" href="entertainment.html">Entertainment</a>
+        <a class="text-gray-300 hover:text-white font-medium" href="about.html">About</a>
+      </nav>
+      <div class="md:hidden">
+        <button
+          aria-label="Open menu"
+          class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
+        >
+          <i class="fas fa-bars fa-lg"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 py-12 flex-grow space-y-12">
+    <h2 class="text-4xl font-extrabold text-white drop-shadow-lg text-center">About UI Dev Music</h2>
+    <section class="bg-white bg-opacity-20 backdrop-blur-md rounded-lg shadow-lg border border-white border-opacity-20 p-8 text-white space-y-6">
+      <p class="text-lg leading-relaxed">
+        UI Dev Music is your ultimate destination for discovering the latest and greatest in the world of music. We are passionate about connecting music lovers with fresh tracks, talented artists, engaging videos, and insightful blogs.
+      </p>
+      <p class="text-lg leading-relaxed">
+        Our mission is to provide a seamless and enjoyable experience for users to explore diverse music genres, stay updated with trending songs, and dive deep into the creative process behind the music industry.
+      </p>
+      <p class="text-lg leading-relaxed">
+        Whether you're a casual listener or a dedicated audiophile, UI Dev Music offers curated content, exclusive interviews, and a vibrant community to celebrate the power of music.
+      </p>
+      <p class="text-lg leading-relaxed">
+        Thank you for being part of our journey. Let's keep the music playing!
+      </p>
+    </section>
+
+    <section class="bg-white bg-opacity-20 backdrop-blur-md rounded-lg shadow-lg border border-white border-opacity-20 p-8 text-white">
+      <h3 class="text-2xl font-bold mb-6 drop-shadow-lg">Company Details</h3>
+      <dl class="space-y-4 max-w-md mx-auto">
+        <div>
+          <dt class="font-semibold">Company Name:</dt>
+          <dd>UI Dev Music Ltd.</dd>
+        </div>
+        <div>
+          <dt class="font-semibold">Founded:</dt>
+          <dd>2020</dd>
+        </div>
+        <div>
+          <dt class="font-semibold">Headquarters:</dt>
+          <dd>123 Music Lane, Melody City, USA</dd>
+        </div>
+        <div>
+          <dt class="font-semibold">Contact Email:</dt>
+          <dd><a href="mailto:info@uidevmusic.com" class="text-purple-300 hover:text-purple-500">info@uidevmusic.com</a></dd>
+        </div>
+        <div>
+          <dt class="font-semibold">Phone:</dt>
+          <dd>+1 (555) 123-4567</dd>
+        </div>
+        <div>
+          <dt class="font-semibold">Website:</dt>
+          <dd><a href="https://www.uidevmusic.com" target="_blank" class="text-purple-300 hover:text-purple-500">www.uidevmusic.com</a></dd>
+        </div>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 bg-opacity-90 text-white text-center py-6 backdrop-blur-sm mt-auto">
+    <p class="text-sm">&copy; 2024 UI Dev Music. All rights reserved.</p>
+  </footer>
+
+  <!-- Ads Popup -->
+  <div id="ads-popup" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden">
+    <div class="bg-white rounded-lg max-w-md w-full p-6 relative shadow-xl">
+      <button id="ads-close-btn" aria-label="Close ad popup" class="absolute top-3 right-3 text-gray-600 hover:text-gray-900 focus:outline-none">
+        <i class="fas fa-times fa-lg"></i>
+      </button>
+      <h3 class="text-xl font-bold mb-4 text-gray-900">Special Offer!</h3>
+      <p class="mb-6 text-gray-700">
+        Get 50% off on premium membership. Enjoy ad-free music and exclusive content.
+      </p>
+      <a href="#" class="inline-block bg-purple-700 text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-purple-800 transition w-full text-center">
+        Upgrade Now
+      </a>
+    </div>
+  </div>
+
+  <script>
+    // Show the ads popup after 3 seconds
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('ads-popup').classList.remove('hidden');
+      }, 3000);
+    });
+
+    // Close button handler
+    document.getElementById('ads-close-btn').addEventListener('click', () => {
+      document.getElementById('ads-popup').classList.add('hidden');
+    });
+  </script>
+</body>
+</html>
