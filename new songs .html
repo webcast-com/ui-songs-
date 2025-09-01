@@ -1,0 +1,182 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>New Songs - UI  Music</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <style>
+    body {
+      background: 
+        radial-gradient(circle at top left, #ff0000, transparent 40%),
+        radial-gradient(circle at top right, #ff7f00, transparent 40%),
+        radial-gradient(circle at bottom left, #ffff00, transparent 40%),
+        radial-gradient(circle at bottom right, #00ff00, transparent 40%),
+        radial-gradient(circle at center, #0000ff, transparent 60%);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-color: #1e293b; /* fallback dark blue-gray */
+    }
+  </style>
+</head>
+<body class="bg-transparent text-gray-100 min-h-screen flex flex-col">
+  <header class="bg-gray-900 bg-opacity-90 text-white shadow-md backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <div class="flex items-center space-x-4">
+        <img
+          alt="UI Dev Logo"
+          class="h-10 w-10 rounded"
+          height="40"
+          src="https://storage.googleapis.com/a1aa/image/230b61b7-abec-45e2-5f46-b9fa03f68217.jpg"
+          width="40"
+        />
+        <h1 class="text-xl font-bold">UI Dev Music</h1>
+      </div>
+      <nav class="hidden md:flex space-x-6">
+        <a class="text-gray-300 hover:text-white font-medium" href="index.html">Home</a>
+        <a class="text-gray-300 hover:text-white font-medium" href="new-songs.html">New Songs</a>
+        <a class="text-gray-300 hover:text-white font-medium" href="#artists-list">Artists</a>
+        <a class="text-gray-300 hover:text-white font-medium" href="#music-videos-list">Videos</a>
+        <a class="text-gray-300 hover:text-white font-medium" href="#blog-section">Blog</a>
+        <a class="text-gray-300 hover:text-white font-medium" href="#team-section">Team</a>
+      </nav>
+      <div class="md:hidden">
+        <button
+          aria-label="Open menu"
+          class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
+        >
+          <i class="fas fa-bars fa-lg"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-10 flex-grow">
+    <h2 class="text-3xl font-bold mb-8 text-white drop-shadow-lg text-center">New Songs</h2>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <li class="bg-white bg-opacity-20 backdrop-blur-md p-6 rounded-lg shadow-lg border border-white border-opacity-20 flex flex-col">
+        <img
+          alt="Album cover for New Song 1"
+          class="rounded-md mb-4 w-full h-48 object-cover"
+          height="192"
+          src="https://storage.googleapis.com/a1aa/image/1a2b3c4d-5678-90ab-cdef-1234567890ab.jpg"
+          width="384"
+        />
+        <h3 class="text-xl font-semibold text-white mb-2 drop-shadow-md">New Song 1 - Fresh Beats</h3>
+        <p class="text-white text-opacity-80 mb-4 flex-grow">
+          Experience the freshest beats of 2024 with this energetic track that will get you moving.
+        </p>
+        <audio controls class="w-full rounded-md mt-auto">
+          <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </li>
+      <li class="bg-white bg-opacity-20 backdrop-blur-md p-6 rounded-lg shadow-lg border border-white border-opacity-20 flex flex-col">
+        <img
+          alt="Album cover for New Song 2"
+          class="rounded-md mb-4 w-full h-48 object-cover"
+          height="192"
+          src="https://storage.googleapis.com/a1aa/image/2b3c4d5e-6789-0abc-def1-234567890abc.jpg"
+          width="384"
+        />
+        <h3 class="text-xl font-semibold text-white mb-2 drop-shadow-md">New Song 2 - Sunrise Melody</h3>
+        <p class="text-white text-opacity-80 mb-4 flex-grow">
+          A soothing melody perfect for early mornings and peaceful moments.
+        </p>
+        <audio controls class="w-full rounded-md mt-auto">
+          <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </li>
+      <li class="bg-white bg-opacity-20 backdrop-blur-md p-6 rounded-lg shadow-lg border border-white border-opacity-20 flex flex-col">
+        <img
+          alt="Album cover for New Song 3"
+          class="rounded-md mb-4 w-full h-48 object-cover"
+          height="192"
+          src="https://storage.googleapis.com/a1aa/image/3c4d5e6f-7890-1bcd-ef23-34567890abcd.jpg"
+          width="384"
+        />
+        <h3 class="text-xl font-semibold text-white mb-2 drop-shadow-md">New Song 3 - Night Groove</h3>
+        <p class="text-white text-opacity-80 mb-4 flex-grow">
+          Dive into the night with this smooth groove that sets the perfect vibe.
+        </p>
+        <audio controls class="w-full rounded-md mt-auto">
+          <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </li>
+      <li class="bg-white bg-opacity-20 backdrop-blur-md p-6 rounded-lg shadow-lg border border-white border-opacity-20 flex flex-col">
+        <img
+          alt="Album cover for New Song 4"
+          class="rounded-md mb-4 w-full h-48 object-cover"
+          height="192"
+          src="https://storage.googleapis.com/a1aa/image/4d5e6f70-8901-2cde-f345-4567890abcde.jpg"
+          width="384"
+        />
+        <h3 class="text-xl font-semibold text-white mb-2 drop-shadow-md">New Song 4 - Electric Pulse</h3>
+        <p class="text-white text-opacity-80 mb-4 flex-grow">
+          Feel the electric pulse of this high-energy track that lights up the dance floor.
+        </p>
+        <audio controls class="w-full rounded-md mt-auto">
+          <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </li>
+      <li class="bg-white bg-opacity-20 backdrop-blur-md p-6 rounded-lg shadow-lg border border-white border-opacity-20 flex flex-col">
+        <img
+          alt="Album cover for New Song 5"
+          class="rounded-md mb-4 w-full h-48 object-cover"
+          height="192"
+          src="https://storage.googleapis.com/a1aa/image/5e6f7081-9012-3def-4567-567890abcdef.jpg"
+          width="384"
+        />
+        <h3 class="text-xl font-semibold text-white mb-2 drop-shadow-md">New Song 5 - Sunset Dreams</h3>
+        <p class="text-white text-opacity-80 mb-4 flex-grow">
+          A dreamy track that captures the beauty of sunsets and calm evenings.
+        </p>
+        <audio controls class="w-full rounded-md mt-auto">
+          <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </li>
+    </ul>
+  </main>
+
+  <footer class="bg-gray-900 bg-opacity-90 text-white text-center py-6 backdrop-blur-sm mt-auto">
+    <p class="text-sm">&copy; 2025 UI  Music. All rights reserved.</p>
+  </footer>
+
+  <!-- Ads Popup -->
+  <div id="ads-popup" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden">
+    <div class="bg-white rounded-lg max-w-md w-full p-6 relative shadow-xl">
+      <button id="ads-close-btn" aria-label="Close ad popup" class="absolute top-3 right-3 text-gray-600 hover:text-gray-900 focus:outline-none">
+        <i class="fas fa-times fa-lg"></i>
+      </button>
+      <h3 class="text-xl font-bold mb-4 text-gray-900">Special Offer!</h3>
+      <p class="mb-6 text-gray-700">
+        Get 50% off on premium membership. Enjoy ad-free music and exclusive content.
+      </p>
+      <a href="#" class="inline-block bg-purple-700 text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-purple-800 transition w-full text-center">
+        Upgrade Now
+      </a>
+    </div>
+  </div>
+
+  <script>
+    // Show the ads popup after 3 seconds
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('ads-popup').classList.remove('hidden');
+      }, 3000);
+    });
+
+    // Close button handler
+    document.getElementById('ads-close-btn').addEventListener('click', () => {
+      document.getElementById('ads-popup').classList.add('hidden');
+    });
+  </script>
+</body>
+</html>
