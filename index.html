@@ -1,0 +1,380 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+  <title>
+   UI Trending Songs, Music Audio, Artists, Videos
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+      background: 
+        radial-gradient(circle at top left, #ff0000, transparent 40%),
+        radial-gradient(circle at top right, #ff7f00, transparent 40%),
+        radial-gradient(circle at bottom left, #ffff00, transparent 40%),
+        radial-gradient(circle at bottom right, #00ff00, transparent 40%),
+        radial-gradient(circle at center, #0000ff, transparent 60%);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-color: #1e293b; /* fallback dark blue-gray */
+    }
+  </style>
+ </head>
+ <body class="bg-transparent text-gray-100 flex flex-col min-h-screen">
+  <header class="bg-gray-900 bg-opacity-90 text-white shadow-md backdrop-blur-sm">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+    <div class="flex items-center space-x-4">
+     <img alt="UI Dev Logo" class="h-10 w-10 rounded" height="40" src="https://storage.googleapis.com/a1aa/image/230b61b7-abec-45e2-5f46-b9fa03f68217.jpg" width="40"/>
+     <h1 class="text-xl font-bold">
+      UI Dev
+     </h1>
+    </div>
+    <nav class="hidden md:flex space-x-6">
+     <a class="text-gray-300 hover:text-white font-medium" href="#">
+      Home
+     </a>
+     <a class="text-gray-300 hover:text-white font-medium" href="#">
+      About
+     </a>
+     <a class="text-gray-300 hover:text-white font-medium" href="#">
+      Services
+     </a>
+     <a class="text-gray-300 hover:text-white font-medium" href="#">
+      Contact
+     </a>
+    </nav>
+    <div class="md:hidden">
+     <button aria-label="Open menu" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white">
+      <i class="fas fa-bars fa-lg">
+      </i>
+     </button>
+    </div>
+   </div>
+  </header>
+  <main class="max-w-6xl mx-auto px-4 flex-grow">
+   <!-- Hero Section -->
+   <section class="relative bg-gradient-to-r from-purple-700 via-pink-600 to-red-600 rounded-lg mt-10 p-8 sm:p-12 text-center shadow-lg text-white">
+    <h2 class="text-3xl sm:text-4xl font-extrabold mb-4 drop-shadow-lg">
+     Welcome to UI  Music
+    </h2>
+    <p class="text-base sm:text-lg max-w-3xl mx-auto mb-8 drop-shadow-md px-2 sm:px-0">
+     Discover the best music audio and videos curated just for you. Dive into a world of sound and visuals with our exclusive collection.
+    </p>
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+     <a class="inline-block bg-white text-purple-700 font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-purple-100 transition" href="#music-audio-list">
+      Explore Music Audio
+     </a>
+     <a class="inline-block bg-white text-pink-600 font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-pink-100 transition" href="#music-videos-list">
+      Explore Music Videos
+     </a>
+    </div>
+   </section>
+   <!-- Trending Songs Section -->
+   <section class="mt-20" id="trending-songs">
+    <h2 class="text-2xl font-bold mb-6 text-white drop-shadow-lg">
+     Trending Songs
+    </h2>
+    <ul class="space-y-6 max-w-3xl mx-auto">
+     <li class="bg-white bg-opacity-20 backdrop-blur-md p-4 rounded-lg shadow-lg border border-white border-opacity-20 flex items-center space-x-4">
+      <img alt="Album cover for Song 1" class="w-20 h-20 rounded-md object-cover" height="80" src="https://storage.googleapis.com/a1aa/image/b47f9392-aed3-435e-6c4b-202e7e0880e8.jpg" width="80"/>
+      <div class="flex flex-col flex-grow">
+       <h3 class="font-semibold text-white drop-shadow-md">
+        Song 1 - Chill Beats
+       </h3>
+       <audio class="w-full rounded-md mt-2" controls="">
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg"/>
+        Your browser does not support the audio element.
+       </audio>
+      </div>
+     </li>
+     <li class="bg-white bg-opacity-20 backdrop-blur-md p-4 rounded-lg shadow-lg border border-white border-opacity-20 flex items-center space-x-4">
+      <img alt="Album cover for Song 2" class="w-20 h-20 rounded-md object-cover" height="80" src="https://storage.googleapis.com/a1aa/image/9a96571d-82b2-4696-fbe0-0d12f416bd17.jpg" width="80"/>
+      <div class="flex flex-col flex-grow">
+       <h3 class="font-semibold text-white drop-shadow-md">
+        Song 2 - Morning Energy
+       </h3>
+       <audio class="w-full rounded-md mt-2" controls="">
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg"/>
+        Your browser does not support the audio element.
+       </audio>
+      </div>
+     </li>
+     <li class="bg-white bg-opacity-20 backdrop-blur-md p-4 rounded-lg shadow-lg border border-white border-opacity-20 flex items-center space-x-4">
+      <img alt="Album cover for Song 3" class="w-20 h-20 rounded-md object-cover" height="80" src="https://storage.googleapis.com/a1aa/image/a082a952-caa2-4788-3b75-35a8ae32663c.jpg" width="80"/>
+      <div class="flex flex-col flex-grow">
+       <h3 class="font-semibold text-white drop-shadow-md">
+        Song 3 - Relaxing Piano
+       </h3>
+       <audio class="w-full rounded-md mt-2" controls="">
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" type="audio/mpeg"/>
+        Your browser does not support the audio element.
+       </audio>
+      </div>
+     </li>
+    </ul>
+   </section>
+   <!-- Music Audio List -->
+   <section class="mt-20" id="music-audio-list">
+    <h2 class="text-2xl font-bold mb-6 text-white drop-shadow-lg">
+     Music Audio List
+    </h2>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+     <li class="bg-white bg-opacity-20 backdrop-blur-md p-4 rounded-lg shadow-lg flex flex-col border border-white border-opacity-20">
+      <h3 class="font-semibold text-lg text-white mb-2 drop-shadow-md">
+       Chill Vibes
+      </h3>
+      <audio class="w-full rounded-md mt-auto" controls="">
+       <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg"/>
+       Your browser does not support the audio element.
+      </audio>
+     </li>
+     <li class="bg-white bg-opacity-20 backdrop-blur-md p-4 rounded-lg shadow-lg flex flex-col border border-white border-opacity-20">
+      <h3 class="font-semibold text-lg text-white mb-2 drop-shadow-md">
+       Morning Energy
+      </h3>
+      <audio class="w-full rounded-md mt-auto" controls="">
+       <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg"/>
+       Your browser does not support the audio element.
+      </audio>
+     </li>
+     <li class="bg-white bg-opacity-20 backdrop-blur-md p-4 rounded-lg shadow-lg flex flex-col border border-white border-opacity-20">
+      <h3 class="font-semibold text-lg text-white mb-2 drop-shadow-md">
+       Relaxing Piano
+      </h3>
+      <audio class="w-full rounded-md mt-auto" controls="">
+       <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" type="audio/mpeg"/>
+       Your browser does not support the audio element.
+      </audio>
+     </li>
+     <li class="bg-white bg-opacity-20 backdrop-blur-md p-4 rounded-lg shadow-lg flex flex-col border border-white border-opacity-20">
+      <h3 class="font-semibold text-lg text-white mb-2 drop-shadow-md">
+       Upbeat Groove
+      </h3>
+      <audio class="w-full rounded-md mt-auto" controls="">
+       <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3" type="audio/mpeg"/>
+       Your browser does not support the audio element.
+      </audio>
+     </li>
+     <li class="bg-white bg-opacity-20 backdrop-blur-md p-4 rounded-lg shadow-lg flex flex-col border border-white border-opacity-20">
+      <h3 class="font-semibold text-lg text-white mb-2 drop-shadow-md">
+       Evening Jazz
+      </h3>
+      <audio class="w-full rounded-md mt-auto" controls="">
+       <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3" type="audio/mpeg"/>
+       Your browser does not support the audio element.
+      </audio>
+     </li>
+    </ul>
+   </section>
+   <!-- Artists Section -->
+   <section class="mt-20" id="artists-list">
+    <h2 class="text-2xl font-bold mb-6 text-white drop-shadow-lg">
+     Featured Artists
+    </h2>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+     <li class="bg-white bg-opacity-20 backdrop-blur-md rounded-lg shadow-lg border border-white border-opacity-20 p-4 flex flex-col items-center text-center">
+      <img alt="Portrait of Artist 1" class="rounded-full mb-4 w-36 h-36 object-cover" height="150" src="https://storage.googleapis.com/a1aa/image/84d911a7-e6a3-4312-bb98-37ba4386e5e0.jpg" width="150"/>
+      <h3 class="font-semibold text-white drop-shadow-md">
+       Artist 1
+      </h3>
+     </li>
+     <li class="bg-white bg-opacity-20 backdrop-blur-md rounded-lg shadow-lg border border-white border-opacity-20 p-4 flex flex-col items-center text-center">
+      <img alt="Portrait of Artist 2" class="rounded-full mb-4 w-36 h-36 object-cover" height="150" src="https://storage.googleapis.com/a1aa/image/f980ebf7-d45e-4658-31cc-abbb7f382ccf.jpg" width="150"/>
+      <h3 class="font-semibold text-white drop-shadow-md">
+       Artist 2
+      </h3>
+     </li>
+     <li class="bg-white bg-opacity-20 backdrop-blur-md rounded-lg shadow-lg border border-white border-opacity-20 p-4 flex flex-col items-center text-center">
+      <img alt="Portrait of Artist 3" class="rounded-full mb-4 w-36 h-36 object-cover" height="150" src="https://storage.googleapis.com/a1aa/image/270d0b7e-194f-4c59-f545-9cddf1ea1c1d.jpg" width="150"/>
+      <h3 class="font-semibold text-white drop-shadow-md">
+       Artist 3
+      </h3>
+     </li>
+     <li class="bg-white bg-opacity-20 backdrop-blur-md rounded-lg shadow-lg border border-white border-opacity-20 p-4 flex flex-col items-center text-center">
+      <img alt="Portrait of Artist 4" class="rounded-full mb-4 w-36 h-36 object-cover" height="150" src="https://storage.googleapis.com/a1aa/image/fa7a08a4-49e0-4e6b-794e-ad1c0de3ecc4.jpg" width="150"/>
+      <h3 class="font-semibold text-white drop-shadow-md">
+       Artist 4
+      </h3>
+     </li>
+     <li class="bg-white bg-opacity-20 backdrop-blur-md rounded-lg shadow-lg border border-white border-opacity-20 p-4 flex flex-col items-center text-center">
+      <img alt="Portrait of Artist 5" class="rounded-full mb-4 w-36 h-36 object-cover" height="150" src="https://storage.googleapis.com/a1aa/image/bb6edc69-384b-4225-c2ee-1942c54ca3f0.jpg" width="150"/>
+      <h3 class="font-semibold text-white drop-shadow-md">
+       Artist 5
+      </h3>
+     </li>
+    </ul>
+   </section>
+   <!-- Music Videos List -->
+   <section class="mt-20 mb-20" id="music-videos-list">
+    <h2 class="text-2xl font-bold mb-6 text-white drop-shadow-lg">
+     Music Videos List
+    </h2>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+     <li class="bg-white bg-opacity-20 backdrop-blur-md p-4 rounded-lg shadow-lg flex flex-col border border-white border-opacity-20">
+      <h3 class="font-semibold text-lg text-white mb-4 drop-shadow-md">
+       Sunset Chill
+      </h3>
+      <video aria-label="Music video titled Sunset Chill" class="w-full rounded-md mt-auto" controls="">
+       <source src="https://sample-videos.com/video123/mp4/480/asdasdas.mp4" type="video/mp4"/>
+       Your browser does not support the video tag.
+      </video>
+     </li>
+     <li class="bg-white bg-opacity-20 backdrop-blur-md p-4 rounded-lg shadow-lg flex flex-col border border-white border-opacity-20">
+      <h3 class="font-semibold text-lg text-white mb-4 drop-shadow-md">
+       City Lights
+      </h3>
+      <video aria-label="Music video titled City Lights" class="w-full rounded-md mt-auto" controls="">
+       <source src="https://sample-videos.com/video123/mp4/480/big_buck_bunny_480p_5mb.mp4" type="video/mp4"/>
+       Your browser does not support the video tag.
+      </video>
+     </li>
+     <li class="bg-white bg-opacity-20 backdrop-blur-md p-4 rounded-lg shadow-lg flex flex-col border border-white border-opacity-20">
+      <h3 class="font-semibold text-lg text-white mb-4 drop-shadow-md">
+       Ocean Waves
+      </h3>
+      <video aria-label="Music video titled Ocean Waves" class="w-full rounded-md mt-auto" controls="">
+       <source src="https://sample-videos.com/video123/mp4/480/big_buck_bunny_480p_1mb.mp4" type="video/mp4"/>
+       Your browser does not support the video tag.
+      </video>
+     </li>
+     <li class="bg-white bg-opacity-20 backdrop-blur-md p-4 rounded-lg shadow-lg flex flex-col border border-white border-opacity-20">
+      <h3 class="font-semibold text-lg text-white mb-4 drop-shadow-md">
+       Night Drive
+      </h3>
+      <video aria-label="Music video titled Night Drive" class="w-full rounded-md mt-auto" controls="">
+       <source src="https://sample-videos.com/video123/mp4/480/asdasdas.mp4" type="video/mp4"/>
+       Your browser does not support the video tag.
+      </video>
+     </li>
+     <li class="bg-white bg-opacity-20 backdrop-blur-md p-4 rounded-lg shadow-lg flex flex-col border border-white border-opacity-20">
+      <h3 class="font-semibold text-lg text-white mb-4 drop-shadow-md">
+       Mountain Echoes
+      </h3>
+      <video aria-label="Music video titled Mountain Echoes" class="w-full rounded-md mt-auto" controls="">
+       <source src="https://sample-videos.com/video123/mp4/480/big_buck_bunny_480p_5mb.mp4" type="video/mp4"/>
+       Your browser does not support the video tag.
+      </video>
+     </li>
+    </ul>
+   </section>
+   <!-- Blog Section -->
+   <section class="mt-20" id="blog-section">
+    <h2 class="text-2xl font-bold mb-6 text-white drop-shadow-lg">
+     Latest Blog Posts
+    </h2>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+     <li class="bg-white bg-opacity-20 backdrop-blur-md rounded-lg shadow-lg border border-white border-opacity-20 p-6 flex flex-col">
+      <img alt="Blog post image about music production" class="rounded-md mb-4 w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/61c0c7c6-b2e3-4739-7c64-ed0c8f3a00fa.jpg" width="600"/>
+      <h3 class="text-xl font-semibold text-white mb-2 drop-shadow-md">
+       Tips for Music Production in 2024
+      </h3>
+      <p class="text-white text-opacity-80 flex-grow">
+       Discover the latest techniques and tools to enhance your music production workflow and create professional tracks.
+      </p>
+      <a class="mt-4 inline-block text-purple-300 hover:text-purple-500 font-semibold" href="#">
+       Read More →
+      </a>
+     </li>
+     <li class="bg-white bg-opacity-20 backdrop-blur-md rounded-lg shadow-lg border border-white border-opacity-20 p-6 flex flex-col">
+      <img alt="Blog post image about music video trends" class="rounded-md mb-4 w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/fb5be2d7-d559-40f2-dfb4-c0f321e70543.jpg" width="600"/>
+      <h3 class="text-xl font-semibold text-white mb-2 drop-shadow-md">
+       Top Music Video Trends to Watch
+      </h3>
+      <p class="text-white text-opacity-80 flex-grow">
+       Explore the hottest trends in music videos and how artists are pushing creative boundaries in 2024.
+      </p>
+      <a class="mt-4 inline-block text-pink-300 hover:text-pink-500 font-semibold" href="#">
+       Read More →
+      </a>
+     </li>
+     <li class="bg-white bg-opacity-20 backdrop-blur-md rounded-lg shadow-lg border border-white border-opacity-20 p-6 flex flex-col">
+      <img alt="Blog post image about featured artists" class="rounded-md mb-4 w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/b45827bd-ad33-4c37-ac9a-5dcd02d5d181.jpg" width="600"/>
+      <h3 class="text-xl font-semibold text-white mb-2 drop-shadow-md">
+       Spotlight on Emerging Artists
+      </h3>
+      <p class="text-white text-opacity-80 flex-grow">
+       Meet the rising stars in the music industry and learn about their unique styles and inspirations.
+      </p>
+      <a class="mt-4 inline-block text-blue-300 hover:text-blue-500 font-semibold" href="#">
+       Read More →
+      </a>
+     </li>
+    </ul>
+   </section>
+   <!-- Team Section -->
+   <section class="mt-20 mb-20" id="team-section">
+    <h2 class="text-2xl font-bold mb-6 text-white drop-shadow-lg">
+     Meet Our Team
+    </h2>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+     <li class="bg-white bg-opacity-20 backdrop-blur-md rounded-lg shadow-lg border border-white border-opacity-20 p-6 flex flex-col items-center text-center">
+      <img alt="Portrait of Team Member 1" class="rounded-full mb-4 w-32 h-32 object-cover" height="128" src="https://randomuser.me/api/portraits/men/32.jpg" width="128"/>
+      <h3 class="font-semibold text-white drop-shadow-md text-lg">
+       John Doe
+      </h3>
+      <p class="text-purple-300 mt-1">Founder &amp; CEO</p>
+     </li>
+     <li class="bg-white bg-opacity-20 backdrop-blur-md rounded-lg shadow-lg border border-white border-opacity-20 p-6 flex flex-col items-center text-center">
+      <img alt="Portrait of Team Member 2" class="rounded-full mb-4 w-32 h-32 object-cover" height="128" src="https://randomuser.me/api/portraits/women/44.jpg" width="128"/>
+      <h3 class="font-semibold text-white drop-shadow-md text-lg">
+       Jane Smith
+      </h3>
+      <p class="text-pink-300 mt-1">Head of Marketing</p>
+     </li>
+     <li class="bg-white bg-opacity-20 backdrop-blur-md rounded-lg shadow-lg border border-white border-opacity-20 p-6 flex flex-col items-center text-center">
+      <img alt="Portrait of Team Member 3" class="rounded-full mb-4 w-32 h-32 object-cover" height="128" src="https://randomuser.me/api/portraits/men/65.jpg" width="128"/>
+      <h3 class="font-semibold text-white drop-shadow-md text-lg">
+       Michael Lee
+      </h3>
+      <p class="text-blue-300 mt-1">Lead Developer</p>
+     </li>
+     <li class="bg-white bg-opacity-20 backdrop-blur-md rounded-lg shadow-lg border border-white border-opacity-20 p-6 flex flex-col items-center text-center">
+      <img alt="Portrait of Team Member 4" class="rounded-full mb-4 w-32 h-32 object-cover" height="128" src="https://randomuser.me/api/portraits/women/68.jpg" width="128"/>
+      <h3 class="font-semibold text-white drop-shadow-md text-lg">
+       Emily Davis
+      </h3>
+      <p class="text-green-300 mt-1">Creative Director</p>
+     </li>
+    </ul>
+   </section>
+  </main>
+  <footer class="bg-gray-900 bg-opacity-90 text-white text-center py-6 backdrop-blur-sm mt-auto">
+   <p class="text-sm">
+    © 2025 UI  Music. All rights reserved.
+   </p>
+  </footer>
+  <!-- Ads Popup -->
+  <div class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden" id="ads-popup">
+   <div class="bg-white rounded-lg max-w-md w-full p-6 relative shadow-xl">
+    <button aria-label="Close ad popup" class="absolute top-3 right-3 text-gray-600 hover:text-gray-900 focus:outline-none" id="ads-close-btn">
+     <i class="fas fa-times fa-lg">
+     </i>
+    </button>
+    <h3 class="text-xl font-bold mb-4 text-gray-900">
+     Special Offer!
+    </h3>
+    <p class="mb-6 text-gray-700">
+     Get 50% off on premium membership. Enjoy ad-free music and exclusive content.
+    </p>
+    <a class="inline-block bg-purple-700 text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-purple-800 transition w-full text-center" href="#">
+     Upgrade Now
+    </a>
+   </div>
+  </div>
+  <script>
+   // Show the ads popup after 3 seconds
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('ads-popup').classList.remove('hidden');
+      }, 3000);
+    });
+
+    // Close button handler
+    document.getElementById('ads-close-btn').addEventListener('click', () => {
+      document.getElementById('ads-popup').classList.add('hidden');
+    });
+  </script>
+ </body>
+</html>
