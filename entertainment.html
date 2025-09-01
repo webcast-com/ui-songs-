@@ -1,0 +1,195 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Entertainment - UI Music</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <style>
+    body {
+      background: 
+        radial-gradient(circle at top left, #ff0000, transparent 40%),
+        radial-gradient(circle at top right, #ff7f00, transparent 40%),
+        radial-gradient(circle at bottom left, #ffff00, transparent 40%),
+        radial-gradient(circle at bottom right, #00ff00, transparent 40%),
+        radial-gradient(circle at center, #0000ff, transparent 60%);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-color: #1e293b; /* fallback dark blue-gray */
+    }
+  </style>
+</head>
+<body class="bg-transparent text-gray-100 min-h-screen flex flex-col">
+  <header class="bg-gray-900 bg-opacity-90 text-white shadow-md backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <div class="flex items-center space-x-4">
+        <img
+          alt="UI Dev Logo"
+          class="h-10 w-10 rounded"
+          height="40"
+          src="https://storage.googleapis.com/a1aa/image/230b61b7-abec-45e2-5f46-b9fa03f68217.jpg"
+          width="40"
+        />
+        <h1 class="text-xl font-bold">UI Music</h1>
+      </div>
+      <nav class="hidden md:flex space-x-6">
+        <a class="text-gray-300 hover:text-white font-medium" href="index.html">Home</a>
+        <a class="text-gray-300 hover:text-white font-medium" href="new-songs.html">New Songs</a>
+        <a class="text-gray-300 hover:text-white font-medium" href="#artists-list">Artists</a>
+        <a class="text-gray-300 hover:text-white font-medium" href="videos.html">Videos</a>
+        <a class="text-gray-300 hover:text-white font-medium" href="music-blog.html">Blog</a>
+        <a class="text-gray-300 hover:text-white font-medium" href="#team-section">Team</a>
+        <a class="text-gray-300 hover:text-white font-medium" href="categories.html">Categories</a>
+        <a class="text-gray-300 hover:text-white font-medium" href="entertainment.html">Entertainment</a>
+      </nav>
+      <div class="md:hidden">
+        <button
+          aria-label="Open menu"
+          class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
+        >
+          <i class="fas fa-bars fa-lg"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-10 flex-grow">
+    <h2 class="text-3xl font-bold mb-8 text-white drop-shadow-lg text-center">Entertainment</h2>
+    <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <article class="bg-white bg-opacity-20 backdrop-blur-md rounded-lg shadow-lg border border-white border-opacity-20 p-6 flex flex-col">
+        <img
+          alt="Live concert crowd with colorful lights"
+          class="rounded-md mb-4 w-full h-48 object-cover"
+          height="400"
+          src="https://storage.googleapis.com/a1aa/image/1f2e3d4c-5b6a-7c8d-9e0f-123456789abc.jpg"
+          width="600"
+        />
+        <h3 class="text-xl font-semibold text-white mb-2 drop-shadow-md">Top Live Concerts of 2024</h3>
+        <p class="text-white text-opacity-80 flex-grow">
+          Experience the most electrifying live concerts happening this year. From rock to electronic, find your vibe.
+        </p>
+        <a class="mt-4 inline-block text-purple-300 hover:text-purple-500 font-semibold" href="#">
+          Read More →
+        </a>
+      </article>
+      <article class="bg-white bg-opacity-20 backdrop-blur-md rounded-lg shadow-lg border border-white border-opacity-20 p-6 flex flex-col">
+        <img
+          alt="Behind the scenes of a music video shoot"
+          class="rounded-md mb-4 w-full h-48 object-cover"
+          height="400"
+          src="https://storage.googleapis.com/a1aa/image/2a3b4c5d-6e7f-8091-2345-6789abcdef01.jpg"
+          width="600"
+        />
+        <h3 class="text-xl font-semibold text-white mb-2 drop-shadow-md">Behind the Scenes: Music Videos</h3>
+        <p class="text-white text-opacity-80 flex-grow">
+          Get an exclusive look behind the scenes of your favorite music videos and the creative process involved.
+        </p>
+        <a class="mt-4 inline-block text-pink-300 hover:text-pink-500 font-semibold" href="#">
+          Read More →
+        </a>
+      </article>
+      <article class="bg-white bg-opacity-20 backdrop-blur-md rounded-lg shadow-lg border border-white border-opacity-20 p-6 flex flex-col">
+        <img
+          alt="DJ performing at a festival with crowd dancing"
+          class="rounded-md mb-4 w-full h-48 object-cover"
+          height="400"
+          src="https://storage.googleapis.com/a1aa/image/3b4c5d6e-7f80-9123-4567-89abcdef0123.jpg"
+          width="600"
+        />
+        <h3 class="text-xl font-semibold text-white mb-2 drop-shadow-md">Festival Highlights and Reviews</h3>
+        <p class="text-white text-opacity-80 flex-grow">
+          Read reviews and highlights from the biggest music festivals around the world.
+        </p>
+        <a class="mt-4 inline-block text-green-300 hover:text-green-500 font-semibold" href="#">
+          Read More →
+        </a>
+      </article>
+      <article class="bg-white bg-opacity-20 backdrop-blur-md rounded-lg shadow-lg border border-white border-opacity-20 p-6 flex flex-col">
+        <img
+          alt="Musician playing guitar in a studio"
+          class="rounded-md mb-4 w-full h-48 object-cover"
+          height="400"
+          src="https://storage.googleapis.com/a1aa/image/4c5d6e7f-8091-2345-6789-abcdef012345.jpg"
+          width="600"
+        />
+        <h3 class="text-xl font-semibold text-white mb-2 drop-shadow-md">Studio Sessions: Creating Hits</h3>
+        <p class="text-white text-opacity-80 flex-grow">
+          Dive into the creative process of artists in the studio as they craft their latest hits.
+        </p>
+        <a class="mt-4 inline-block text-blue-300 hover:text-blue-500 font-semibold" href="#">
+          Read More →
+        </a>
+      </article>
+      <article class="bg-white bg-opacity-20 backdrop-blur-md rounded-lg shadow-lg border border-white border-opacity-20 p-6 flex flex-col">
+        <img
+          alt="Crowd enjoying a music award show"
+          class="rounded-md mb-4 w-full h-48 object-cover"
+          height="400"
+          src="https://storage.googleapis.com/a1aa/image/5d6e7f80-9123-4567-89ab-cdef01234567.jpg"
+          width="600"
+        />
+        <h3 class="text-xl font-semibold text-white mb-2 drop-shadow-md">Music Awards 2024: Winners & Highlights</h3>
+        <p class="text-white text-opacity-80 flex-grow">
+          Catch up on the biggest moments and winners from the 2024 music awards season.
+        </p>
+        <a class="mt-4 inline-block text-yellow-300 hover:text-yellow-500 font-semibold" href="#">
+          Read More →
+        </a>
+      </article>
+      <article class="bg-white bg-opacity-20 backdrop-blur-md rounded-lg shadow-lg border border-white border-opacity-20 p-6 flex flex-col">
+        <img
+          alt="Fans meeting their favorite artists at a signing event"
+          class="rounded-md mb-4 w-full h-48 object-cover"
+          height="400"
+          src="https://storage.googleapis.com/a1aa/image/6e7f8091-2345-6789-abcd-ef0123456789.jpg"
+          width="600"
+        />
+        <h3 class="text-xl font-semibold text-white mb-2 drop-shadow-md">Fan Meet & Greets: Behind the Scenes</h3>
+        <p class="text-white text-opacity-80 flex-grow">
+          Experience the excitement and stories from fan meet & greet events with top artists.
+        </p>
+        <a class="mt-4 inline-block text-red-300 hover:text-red-500 font-semibold" href="#">
+          Read More →
+        </a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 bg-opacity-90 text-white text-center py-6 backdrop-blur-sm mt-auto">
+    <p class="text-sm">&copy; 2025 UI Music. All rights reserved.</p>
+  </footer>
+
+  <!-- Ads Popup -->
+  <div id="ads-popup" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden">
+    <div class="bg-white rounded-lg max-w-md w-full p-6 relative shadow-xl">
+      <button id="ads-close-btn" aria-label="Close ad popup" class="absolute top-3 right-3 text-gray-600 hover:text-gray-900 focus:outline-none">
+        <i class="fas fa-times fa-lg"></i>
+      </button>
+      <h3 class="text-xl font-bold mb-4 text-gray-900">Special Offer!</h3>
+      <p class="mb-6 text-gray-700">
+        Get 50% off on premium membership. Enjoy ad-free music and exclusive content.
+      </p>
+      <a href="#" class="inline-block bg-purple-700 text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-purple-800 transition w-full text-center">
+        Upgrade Now
+      </a>
+    </div>
+  </div>
+
+  <script>
+    // Show the ads popup after 3 seconds
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('ads-popup').classList.remove('hidden');
+      }, 3000);
+    });
+
+    // Close button handler
+    document.getElementById('ads-close-btn').addEventListener('click', () => {
+      document.getElementById('ads-popup').classList.add('hidden');
+    });
+  </script>
+</body>
+</html>
